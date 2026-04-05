@@ -174,6 +174,10 @@ public class InputSourceLoader {
                 case VIDEO:
                     videoSources.put(sourceName, (VideoSource) source);
                     break;
+                case UNKNOWN:
+                default:
+                    // Unknown source type, skip classification
+                    break;
             }
 
         }

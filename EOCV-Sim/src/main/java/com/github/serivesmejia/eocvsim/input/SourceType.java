@@ -25,7 +25,6 @@ package com.github.serivesmejia.eocvsim.input;
 
 import com.github.serivesmejia.eocvsim.input.source.*;
 
-import javax.swing.filechooser.FileFilter;
 import java.io.File;
 
 public enum SourceType {
