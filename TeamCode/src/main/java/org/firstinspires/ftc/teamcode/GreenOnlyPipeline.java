@@ -16,7 +16,7 @@ public class GreenOnlyPipeline extends OpenCvPipeline {
     private List<MatOfPoint> contours = new ArrayList<>();
 
 
-    public Scalar lowerGreen = new Scalar(75, 100, 60);
+    public Scalar lowerGreen = new Scalar(75, 180, 60);
     public Scalar upperGreen = new Scalar(108, 255, 230);
 
     public int purpleCount = 0;

@@ -21,7 +21,7 @@ public class PurpleGreenPipeline extends OpenCvPipeline {
     public Scalar lowerPurple = new Scalar(120, 50, 70);
     public Scalar upperPurple = new Scalar(250, 250, 250);
 
-    public Scalar lowerGreen = new Scalar(75, 100, 60);
+    public Scalar lowerGreen = new Scalar(75, 180, 60);
     public Scalar upperGreen = new Scalar(108, 255, 230);
 
     public int totalCount = 0;
