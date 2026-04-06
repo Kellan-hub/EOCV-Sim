@@ -16,8 +16,8 @@ public class GreenOnlyPipeline extends OpenCvPipeline {
     private List<MatOfPoint> contours = new ArrayList<>();
 
 
-    public Scalar lowerGreen = new Scalar(60, 0, 40);
-    public Scalar upperGreen = new Scalar(100, 100, 150);
+    public Scalar lowerGreen = new Scalar(75, 100, 60);
+    public Scalar upperGreen = new Scalar(108, 255, 230);
 
     public int purpleCount = 0;
 
@@ -46,7 +46,7 @@ public class GreenOnlyPipeline extends OpenCvPipeline {
 
             double area = Imgproc.contourArea(contour);
 
-            if (area > 1500) {
+            if (area > 300) {
 
 
                 Imgproc.drawContours(output, contours,

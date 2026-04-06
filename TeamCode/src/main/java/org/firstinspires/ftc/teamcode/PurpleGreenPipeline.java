@@ -17,12 +17,12 @@ public class PurpleGreenPipeline extends OpenCvPipeline {
 
     private List<MatOfPoint> contours = new ArrayList<>();
 
- 
-    public Scalar lowerPurple = new Scalar(115, 50, 50);
-    public Scalar upperPurple = new Scalar(200, 150, 150);
 
-    public Scalar lowerGreen = new Scalar(60, 0, 40);
-    public Scalar upperGreen = new Scalar(100, 100, 150);
+    public Scalar lowerPurple = new Scalar(120, 50, 70);
+    public Scalar upperPurple = new Scalar(250, 250, 250);
+
+    public Scalar lowerGreen = new Scalar(75, 100, 60);
+    public Scalar upperGreen = new Scalar(108, 255, 230);
 
     public int totalCount = 0;
 
@@ -57,7 +57,7 @@ public class PurpleGreenPipeline extends OpenCvPipeline {
 
             double area = Imgproc.contourArea(contour);
 
-            if (area > 1000) {
+            if (area > 2000) {
 
                 Imgproc.drawContours(
                         output,

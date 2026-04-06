@@ -16,8 +16,8 @@ public class PurpleOnlyPipeline extends OpenCvPipeline {
     private List<MatOfPoint> contours = new ArrayList<>();
 
 
-    public Scalar lowerPurple = new Scalar(115, 50, 50);
-    public Scalar upperPurple = new Scalar(200, 150, 150);
+    public Scalar lowerPurple = new Scalar(120, 50, 70);
+    public Scalar upperPurple = new Scalar(250, 250, 250);
 
     public int purpleCount = 0;
 
